@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-mdb-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        Submenu &raquo;
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                        <li>
+                            <a class="dropdown-item" href="#">Submenu item 1</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Submenu item 2</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Multi level 1</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Multi level 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Submenu item 4</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Submenu item 5</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <figure class="figure container-fluid justify-content-md-center">
+            <div style="width: 320px;">
+                <div class="container login container-md container-sm ">
+                    <div class="user ">
+                        <!--  IMAGEN BOOTSTRAP  -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="currentColor"
+                            class="bi bi-person-circle " viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                        <!--  TERMINA IMAGEN  -->
+                    </div>
+                    <form action="" method="get" class="m-3">
+                        <h4 style="color:white; margin-bottom: 15px;">Iniciar sesión</h4>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="example@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="example: User@123">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="border-radius: 20px;">Ingresar</button>
+                    </form>
+                </div>
+        </figure>
+    </section>
+    <!--  Script JS BOOTSTRAP -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--  END Script JS BOOTSTRAP -->
+</body>
+
+</html>

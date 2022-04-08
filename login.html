@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Log-in</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light"
+            style="background: linear-gradient(to bottom, rgb(62, 2, 110), rgb(119, 0, 255));">
+            <div class="container-fluid">
+                <!--  Botono inicial NOMBRE/LOGO  -->
+                <a class="navbar-brand" href="index.html" style="color: white;">
+                    <img src="img/logo.png" alt="" width="24" height="24" class="d-inline-block align-text-rigth">
+                    Cultura Mundial
+                </a>
+
+                <!-- Boton desplegable adapt movil -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation" style="color: rgb(169, 94, 255);">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--  Fin Boton desplegable adapt movil  -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"
+                                style="color: white;">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Boton de encuesta -->
+                            <a class="nav-link" href="conocenos.html" style="color: white;">Encuesta</a>
+                        </li>
+                        <!-- Boton de conocenos -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="conocenos.html" style="color: white;">Conocenos</a>
+                        </li>
+
+                        <!--  BOTON DESPLEGLABE  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                                Países
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                                <li><a class="dropdown-item" href="#">Italia</a></li>
+                                <li><a class="dropdown-item" href="#">Japon</a></li>
+                                <li><a class="dropdown-item" href="#">Perú</a></li>
+                                <li><a class="dropdown-item" href="#">México</a></li>
+                                <li><a class="dropdown-item" href="#">España</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- BOTON DESPLEGABLE FINAL    -->
+
+                    <!--  Iniciar Sesión/Registrarte  -->
+                    <ul class="navbar-nav flex-wrap ms-md-auto">
+                        <!-- Boton de Iniciar sesión -->
+                        <li class="nav-item">
+                            <a class="nav-link boton btn btn-primary" href="login.html"
+                                style="color: white; border-radius: 13px; margin-right: 5px; margin-top: 4px; text-align: center;">Inicia
+                                sesion</a>
+                        </li>
+                        <!-- Boton de Registrarte -->
+                        <li class="nav-item">
+                            <a class="nav-link boton btn btn-primary" href="#"
+                                style="color: white;  border-radius: 13px; margin-right: 5px; margin-top: 4px; text-align: center;">Registrate</a>
+                        </li>
+                    </ul>
+                    <!--  Terminar Iniciar Sesión/Registrarte  -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto">
+                    <div style="width: 350px;">
+                        <div class="container login container-md container-sm ">
+                            <div class="user ">
+                                <!--  IMAGEN BOOTSTRAP  -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="currentColor"
+                                    class="bi bi-person-circle " viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                </svg>
+                                <!--  TERMINA IMAGEN  -->
+                            </div>
+                            <form action="" method="get" class="m-3">
+                                <h4 style="color:white; margin-bottom: 15px;">Iniciar sesión</h4>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="example@email.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="example: User@123">
+                                </div>
+                                <button type="submit" class="btn btn-primary"
+                                    style="border-radius: 20px;">Ingresar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <footer class="container-fluid">
+        <p style="color:white">Terminos y condiciones</p>
+        <p style="color:white">Derechos reservados ©</p>
+    </footer>
+
+
+    <!--  Script JS BOOTSTRAP -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--  END Script JS BOOTSTRAP -->
+</body>
+
+</html>

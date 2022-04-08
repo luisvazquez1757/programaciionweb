@@ -1,0 +1,123 @@
+a {
+  color: rgb(119, 0, 255);
+}
+
+.encuesta h3 {
+  color: #fff;
+}
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.contenedor figure {
+  position: relative;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.boton {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.contenedor figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+
+.contenedor figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.63);
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.contenedor figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedor figure:hover > .capa h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+.contenedor figure:hover > img {
+  transform: scale(1.3);
+}
+
+.contenedor figure .capa p {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 20px;
+  transition: all 500ms ease-out;
+  margin-top: 100px;
+}
+
+.login {
+  margin-top: 60px;
+  margin: 60px;
+  padding: 30px;
+  background: linear-gradient(to bottom, rgb(119, 0, 255), rgb(62, 2, 110));
+  height: 480px;
+  width: 350px;
+  border-radius: 40px;
+  align-items: center;
+}
+
+.form-label {
+  color: rgb(255, 255, 255);
+}
+
+.user {
+  background-color: #fff;
+  border-radius: 100px;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 30px;
+  margin-left: 80px;
+}
+
+.encuesta {
+  margin-top: 10px;
+  background-color: blueviolet;
+  text-align: center;
+  border-radius: 20rem;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 40px;
+}
+footer {
+  padding: 10px;
+  background-color: #602085c9;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  color: white;
+}
